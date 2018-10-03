@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Probot app analyse a check_run 1`] = `
+Object {
+  "annotations": Array [],
+  "breaking": true,
+  "identical": false,
+}
+`;
