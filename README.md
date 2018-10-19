@@ -4,7 +4,9 @@
 
 ## Why
 
-When using Continuous Evolution you have to prevent any Breaking Changes to your GraphQL API. That's why we recommend to commit a dump of your GraphQL schema (using SDL) inside your repository (eg: with a `pre-commit`). Then `graphql-doctor` will use your current schema and compare it with the previous schema (eg: the schema on the `master` branch) and guess if you made some Breaking or Dangerous changes !
+When using Continuous Evolution you have to prevent any Breaking Changes to your GraphQL API. That's why we recommend to commit a dump of your GraphQL schema (using SDL) inside your repository (eg: with a `pre-commit`).
+
+`graphql-doctor` will use your current schema and compare it with the previous schema (eg: the schema on the `master` branch)  then it guess if you made some Breaking or Dangerous changes !
 
 ## Features 
 
@@ -18,7 +20,7 @@ When using Continuous Evolution you have to prevent any Breaking Changes to your
 
 ## Inspiration
 
-This project was created because at Cap Collectif we wanted the same bot as used [internally at GitHub](https://speakerdeck.com/xuorig/continuous-evolution-of-graphql-schemas-at-github?slide=21). We mostly used [xuorig/graphql-schema_comparator](https://github.com/xuorig/graphql-schema_comparator) as an inspiration.
+This project was created because we, at Cap Collectif, wanted the same bot as used [internally at GitHub](https://speakerdeck.com/xuorig/continuous-evolution-of-graphql-schemas-at-github?slide=21). We mostly used [xuorig/graphql-schema_comparator](https://github.com/xuorig/graphql-schema_comparator) as an inspiration.
 
 ## Configuration
 
@@ -58,7 +60,7 @@ yarn start
 yarn test
 ```
 
-If you have suggestions for how graphql-doctor could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
+If you have suggestions for how graphql-doctor could be improved, or want to report a bug, open an issue! Any kind of contributions is greatly appreciated.
 
 For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
