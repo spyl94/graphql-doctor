@@ -8,7 +8,11 @@ When using Continuous Evolution you have to prevent any Breaking Changes to your
 
 `graphql-doctor` will use your current schema and compare it with the previous schema (eg: the schema on the `master` branch)  then it guess if you made some Breaking or Dangerous changes !
 
-## Features 
+## Example
+
+You can look at [this Pull request](https://github.com/cap-collectif/graphql-doctor/pull/5/files).
+
+## Features
 
 #### Show issues right in your schema
 
