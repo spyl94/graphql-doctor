@@ -1,6 +1,5 @@
 type Author {
     id: Int!
-    firstName: String
     lastName: String
     """
     the list of Posts by this author
@@ -8,27 +7,27 @@ type Author {
     posts: [Post]
   }
 
-  enum UserRole {
-    ROLE_ADMIN
-    ROLE_USER
-  }
-
   type Post {
-    id: Int!
+    id: Int
     title: String
-    author: Author
+    author: Author!
     votes: Int
   }
 
   # the schema allows the following query:
   type Query {
     posts: [Post]
-    author(id: Int! = 1): Author
+    author(id: Int! = 2, includeIfDeleted: Boolean): Author
+  }
+
+  enum UserRole {
+    ROLE_USER
+    ROLE_NEW
   }
 
   # this schema allows the following mutation:
   type Mutation {
     upvotePost (
-      postId: Int
+      postId: Int!
     ): Post
   }
