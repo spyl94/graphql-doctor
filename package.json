@@ -19,6 +19,12 @@
     "test": "jest && standard",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
+  "graphql-doctor": {
+    "example/schema.graphql": {
+      "ref": "heads/master",
+      "schemaPath": "example/schema.graphql"
+    }
+  },
   "dependencies": {
     "extract-values": "^0.1.2",
     "graphql": "^14.0.2",

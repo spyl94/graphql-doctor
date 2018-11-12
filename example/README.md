@@ -1,0 +1,1 @@
+GraphQL Doctor's configuration for this example can be found in our [package.json](https://github.com/cap-collectif/graphql-doctor/blob/master/package.json).
